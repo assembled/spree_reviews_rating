@@ -10,9 +10,9 @@
 		  start: <%= review.rating %>,
 		  half:  true,
 		  width: 180,
-		  starHalf: 'star-half<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
-		  starOff: 'star-off<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
-	 	  starOn:	'star-on<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
+  		starHalf: '<%= asset_path("star-half.png").gsub("/assets/","") %>',
+  		starOff: '<%= asset_path("star-off.png").gsub("/assets/","") %>',
+  		starOn:	'<%= asset_path("star-on.png").gsub("/assets/","") %>',
 		  path: '/assets/'
 		});
 	});
