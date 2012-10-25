@@ -3,6 +3,6 @@
   <%= render :partial => "spree/reviews/stars", :locals => {:stars => stars[:star]} %>
 </span>
 <span style="float:right;">
-  <%= Review.model_name.human(:count => stars[:rcount]) %>
+  <%= Spree::Review.model_name.human(:count => stars[:rcount]) %>
 </span>
 <br/>
