@@ -451,7 +451,7 @@
 })(jQuery);
 
 $(function() {
-	$(".review_submit").live("click", function() {
+	$(".review_submit").on("click", function() {
 		$(this).parents("form:first").validate();
 		$(this).parents("form:first").submit();
 		$(this).parents("form:first").hide();
