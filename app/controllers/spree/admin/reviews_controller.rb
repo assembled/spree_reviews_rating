@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    class ReviewsController < Spree::Admin::BaseController
+    class ReviewsController < ResourceController
       
       helper 'spree/reviews'
       before_filter :load_data
