@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    class ReviewSettingsController < ResourceController
+    class ReviewSettingsController < Spree::Admin::BaseController
       
       def show
         @preferences = ['preview_size']
