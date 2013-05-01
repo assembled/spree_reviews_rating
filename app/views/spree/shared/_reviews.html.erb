@@ -9,7 +9,7 @@
 	<div class="pagination">
 		<div class="results"><%= paginate @product.reviews.approved.page(params[:page]).per(Spree::Config[:preview_size]) %></div>
 	</div>
-	<% if !Spree::Config[:require_login] || current_user %>
+	<% if !Spree::Config[:require_login] || spree_current_user %>
 		<% if !Spree::Config[:form_show] %>
 			<%= link_to(t('write_your_own_review'), new_product_review_path(@product), :class => "button-review", :rel => "nofollow,noindex") %>
 		<% else %>
